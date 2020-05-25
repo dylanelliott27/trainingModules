@@ -1,38 +1,104 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* non react code below */
+
+.background-left{
+  position: relative;
+  width: 25%;
+  background-repeat: no-repeat;
+  border-bottom: 100vh solid #5FBFF9;
+  border-right: 50vw solid transparent;
+  z-index: 1;
+}
+ .left-content{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 50vw;
+  padding-left: 2rem;
+}
+.logo{
+  position: absolute;
+  width: 75%;
+  padding-left: 1rem;
+}
+.background-right{
+  margin: 0;
+  position: absolute;
+background-color: #F6F6F6;
+width: 75%;
+height: 100vh;
+top: 0;
+left: 25%;
+}
+
+.navigation{
+}
+.navigationitems{
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+.navigationitems > li{
+  padding-right: 3rem;
+  padding-left: 3rem;
+  border-left: 1px solid;
+}
+
+.calltoaction{
+  margin-top: 4rem;
+  width: 70%;
+  text-align: center;
+  word-break: break-word;
+}
+.calltoaction > p{
+  margin-bottom: 2rem;
+}
+
+.flowchartcontainer{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}
+.charts{
+ padding-right: 8rem;
+}
+
+.stepscontainer{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 53%;
+}
+
+.step{
+  display: flex;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.stepone{
+  margin-right: 30rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.steptwo{
+  margin-right: 22rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.stepthree{
+  margin-right: 12rem;
+}
+.stepcircle{
+  border-radius: 100%;
+  width: 40%;
+  height: 85%;
+  background-color: #16BAC5;
+  text-align: center;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 30px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
