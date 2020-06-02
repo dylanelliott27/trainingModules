@@ -1,0 +1,74 @@
+
+.leftnav{
+    background-color: #5FBFF9;
+    width: 15vw;
+    text-align: center;
+    height: 100vh;
+}
+.leftnavitems{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.rightscreenwrapper{
+    width: 85vw;
+}
+.dashboardcontainer{
+    display: flex;
+}
+
+.topnav{
+    height: 5vh;
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+.topnav > img{
+    border-left: 1px solid black;
+    padding-left: 1.5rem;
+    margin-right: 1em;
+}
+.topnav > p{
+    padding-right: 1.5rem;
+}
+.dashboardview{
+    background-color: #F6F6F6;
+    height:95vh; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.welcomemessage{
+    text-align: center;
+}
+.availablemodules{
+    border: 1px solid black;
+    width: 75%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    padding-top: 1rem;
+}
+.availablemodules > h2{
+    background-color: #F6F6F6;
+    width: 30%;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    left: 35%;
+}
+.bottomwrapper{
+    display: flex;
+    justify-content: space-around   ;
+    width: 85vw;
+}
+.completedmodules{
+
+}
+.statistics{
+
+}

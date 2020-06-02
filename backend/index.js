@@ -84,3 +84,30 @@ app.post('/nextquestion', (req, res) => {
     })
     
 })
+
+
+app.post('/createflow', (req, res) => {
+        const connection = mysql.createConnection({
+            host : 'localhost',
+            user : 'root',
+            password : '',
+            database : 'testhierarchy'
+        })
+
+        connection.connect(() => {
+            console.log("connection made to mysql");
+        })
+        req.body.forEach(question => {
+            connection.query(`call create_new_question(${question.questionid}, '${question.questionname}', '${question.optionone}', '${question.optiontwo}', '${question.optionthree}', '${question.parentquestion}', '${question.parentoption}')`, (error, results, fields) => {
+                if(error) throw error;
+                console.log(question);
+            })
+        })
+        connection.end();
+    res.send("done");
+})
+    
+
+
+
+

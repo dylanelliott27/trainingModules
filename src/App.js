@@ -7,7 +7,7 @@ import Landingpage from './Landingpage.js';
 function App() {
 
 return (
-  <Landingpage />
+  <Dashboard />
 )
 }
 

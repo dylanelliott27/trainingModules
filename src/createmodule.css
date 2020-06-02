@@ -1,0 +1,26 @@
+.questioncard{
+    background-color: #5FBFF9;
+    width: 20%;
+    border-top: 5px solid #5863F8;
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.createquestioncardscontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.addquestion{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    border-radius: 100%;
+    top: 0;
+}
+.horizontal{
+    display: flex;
+    justify-content: space-evenly;
+}
